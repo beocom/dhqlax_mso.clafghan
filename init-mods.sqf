@@ -11,6 +11,7 @@ if (isClass(configFile>>"CfgPatches">>"ace_main")) then {
         ace_sys_aitalk_radio_enabled = false;
         ace_sys_repair_default_tyres = true;
         ace_sys_tracking_markers_enabled = false;
+        publicVariable "ace_sys_tracking_markers_enabled";
         [player,"ACE_KeyCuffs"] call CBA_fnc_addWeapon;
         [player,"ACE_GlassesLHD_glasses"] call CBA_fnc_addWeapon;
         [player,"ACE_Earplugs"] call CBA_fnc_addWeapon;

@@ -2,7 +2,7 @@ class nomadHeader {
         title = "    Nomad"; 
         values[]= {1,0}; 
         texts[]= {"On","Off"}; 
-        default = 1;
+        default = 0;
 };
 class nomadTime {
 	title = "        NOMAD Player State Save Option"; 

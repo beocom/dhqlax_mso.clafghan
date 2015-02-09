@@ -89,7 +89,7 @@ class Mission
 	randomSeed=4990239;
 	class Intel
 	{
-		briefingName="MSO 32 ACEX COOP USA VS TAK INS 4.55";
+		briefingName="DHQLAX MSO Clafghan";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.45;

@@ -2,7 +2,7 @@ class persistentDBHeader {
         title = "    Persistent DB (switch off NOMAD)"; 
         values[]= {1,0}; 
         texts[]= {"On","Off"}; 
-        default = 0;
+        default = 1;
 };
 class mpdb_save_delay_server {
         title = "        Persistent Auto-Save (Server)"; 
@@ -20,7 +20,7 @@ class mpdb_teleport_player {
         title = "        Teleport player to last saved position"; 
         values[]= {2,1,0}; 
         texts[]= {"Prompt Player","Auto","No"}; 
-        default = 2;
+        default = 1;
 };
 class mpdb_date_enabled {
         title = "        Persistent Date"; 

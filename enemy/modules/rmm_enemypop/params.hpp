@@ -44,23 +44,23 @@ class rmm_ep_mot {
         title = "    Enemy Motorized Units"; 
         values[]= {0,9,8,7,6,5,4,3,2,1}; 
         texts[]= {"Disabled","90%","80%","70%","60%","50%","40%","30%","20%","10%"}; 
-        default = 3;
+        default = 1;
 };
 class rmm_ep_mec {
         title = "    Enemy Mechanized Units"; 
         values[]= {0,9,8,7,6,5,4,3,2,1}; 
         texts[]= {"Disabled","90%","80%","70%","60%","50%","40%","30%","20%","10%"}; 
-        default = 2;
+        default = 0;
 };
 class rmm_ep_arm {
         title = "    Enemy Armoured Units"; 
         values[]= {0,9,8,7,6,5,4,3,2,1}; 
         texts[]= {"Disabled","90%","80%","70%","60%","50%","40%","30%","20%","10%"}; 
-        default = 1;
+        default = 0;
 };
 class rmm_ep_aa {
         title = "    Enemy Anti-Air Units"; 
         values[]= {0,1,2}; 
         texts[]= {"None","with AA Missiles","without AA Missiles"}; 
-        default = 1;
+        default = 0;
 };
