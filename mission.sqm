@@ -483,7 +483,7 @@ class Mission
 					leader=1;
 					skill=1;
 					text="UAV_MQ9";
-					init="UAV_MQ9 flyInHeight 750;";
+					init="UAV_MQ9 flyInHeight 1000;";
 					description="UAV MQ-9";
 					synchronizations[]={161};
 				};
