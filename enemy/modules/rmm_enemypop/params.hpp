@@ -50,7 +50,7 @@ class rmm_ep_mec {
         title = "    Enemy Mechanized Units"; 
         values[]= {0,9,8,7,6,5,4,3,2,1}; 
         texts[]= {"Disabled","90%","80%","70%","60%","50%","40%","30%","20%","10%"}; 
-        default = 0;
+        default = 1;
 };
 class rmm_ep_arm {
         title = "    Enemy Armoured Units"; 
