@@ -47,7 +47,9 @@ class Mission
 		"ace_sys_viewblock",
 		"ace_sys_vehicledamage",
 		"ace_sys_aitalk",
-		"acex_usnavy_men_usmc"
+		"acex_usnavy_men_usmc",
+		"CACharacters_BAF",
+		"cacharacters2"
 	};
 	addOnsAuto[]=
 	{
@@ -67,6 +69,9 @@ class Mission
 		"ace_sys_viewblock",
 		"ace_sys_vehicledamage",
 		"ace_sys_aitalk",
+		"CACharacters_BAF",
+		"cacharacters2",
+		"ace_sys_repair",
 		"camisc_e_wf",
 		"casigns_e",
 		"ca_baf",
@@ -81,7 +86,6 @@ class Mission
 		"cawheeled_e_hmmwv",
 		"CAWheeled_E",
 		"CATracked_E_M2A2_Bradley",
-		"ace_sys_repair",
 		"CAWheeled_E_ATV",
 		"CAAir_E_UH60M",
 		"CAWheeled2_MMT",
@@ -111,7 +115,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=22;
+		items=31;
 		class Item0
 		{
 			side="LOGIC";
@@ -391,7 +395,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					synchronizations[]={22,168,163,169,146,170};
+					synchronizations[]={22,168,163,169,146,170,195};
 				};
 			};
 		};
@@ -421,7 +425,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={14169.233,813.815,8353.7734};
+					position[]={14169.463,813.815,8353.7754};
 					id=163;
 					side="WEST";
 					vehicle="ACE_USMC_Soldier_Officer_D";
@@ -473,8 +477,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13342.611,851.4801,7843.8057};
-					azimut=40;
+					position[]={13733.243,787.60309,8059.127};
+					azimut=55;
 					special="FLY";
 					age="ACTUAL";
 					id=168;
@@ -483,7 +487,7 @@ class Mission
 					leader=1;
 					skill=1;
 					text="UAV_MQ9";
-					init="UAV_MQ9 flyInHeight 1000;";
+					init="UAV_MQ9 flyInHeight 2500;";
 					description="UAV MQ-9";
 					synchronizations[]={161};
 				};
@@ -494,9 +498,6 @@ class Mission
 				class Item0
 				{
 					position[]={19135.729,75.264374,10799.053};
-					combatMode="BLUE";
-					speed="LIMITED";
-					combat="SAFE";
 					class Effects
 					{
 					};
@@ -674,7 +675,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={14169.296,813.815,8351.5264};
+					position[]={14169.495,813.815,8351.5449};
 					id=176;
 					side="WEST";
 					vehicle="ACE_USMC_Soldier_TL_D";
@@ -682,6 +683,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
+					description="Alpha 1 - Fireteam Leader - Sergeant - [DHQL]Pedersen";
 				};
 				class Item1
 				{
@@ -701,6 +703,7 @@ class Mission
 					vehicle="ACE_USMC_Soldier_Medic_D";
 					player="PLAY CDG";
 					skill=0.33333331;
+					description="Alpha 1 - Corpsman - Private - [DHQL]Agamashi";
 				};
 				class Item3
 				{
@@ -710,6 +713,7 @@ class Mission
 					vehicle="ACE_USMC_SoldierM_Marksman_D";
 					player="PLAY CDG";
 					skill=0.2;
+					description="Alpha 1 - Marksman - Private - [dhql]allan";
 				};
 			};
 		};
@@ -721,7 +725,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={14169.44,813.815,8349.0674};
+					position[]={14169.572,813.815,8349.0195};
 					id=180;
 					side="WEST";
 					vehicle="ACE_USMC_Soldier_TL_D";
@@ -729,6 +733,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
+					description="Alpha 2 - Fireteam Leader - Sergeant - [DHQL]phAts";
 				};
 				class Item1
 				{
@@ -739,6 +744,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
+					description="Alpha 2 - AR - Corporal - [DHQL]Miles Long  ";
 				};
 				class Item2
 				{
@@ -748,6 +754,7 @@ class Mission
 					vehicle="ACE_USMC_Soldier_Medic_D";
 					player="PLAY CDG";
 					skill=0.33333331;
+					description="Alpha 2 - Corpsman - Private - [DHQL]]Ninjah";
 				};
 				class Item3
 				{
@@ -757,6 +764,7 @@ class Mission
 					vehicle="ACE_USMC_SoldierM_Marksman_D";
 					player="PLAY CDG";
 					skill=0.2;
+					description="Alpha 2 - Marksman - Private - [DHQL]Nighthawk";
 				};
 			};
 		};
@@ -768,7 +776,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={14169.53,813.815,8346.7822};
+					position[]={14169.53,813.815,8346.6338};
 					id=184;
 					side="WEST";
 					vehicle="ACE_USMC_Soldier_TL_D";
@@ -776,6 +784,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
+					description="Alpha 3 - Fireteam Leader - Sergeant - [DHQL]Sideshow";
 				};
 				class Item1
 				{
@@ -786,6 +795,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
+					description="Alpha 3 - AR - Corporal - [DHQL]Armouredspacepony";
 				};
 				class Item2
 				{
@@ -795,6 +805,7 @@ class Mission
 					vehicle="ACE_USMC_Soldier_Medic_D";
 					player="PLAY CDG";
 					skill=0.33333331;
+					description="Alpha 3 - Corpsman - Private - [DHQL]Blaahvaldk";
 				};
 				class Item3
 				{
@@ -804,6 +815,7 @@ class Mission
 					vehicle="ACE_USMC_SoldierM_Marksman_D";
 					player="PLAY CDG";
 					skill=0.2;
+					description="Alpha 3 - Marksman - Private - [DHQL]Link";
 				};
 			};
 		};
@@ -815,7 +827,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={14169.471,813.815,8344.3525};
+					position[]={14169.504,813.815,8344.2705};
 					id=188;
 					side="WEST";
 					vehicle="ACE_USMC_Soldier_TL_D";
@@ -823,6 +835,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.46666664;
+					description="Alpha 4 - Fireteam Leader - Sergeant - (Open Slot)";
 				};
 				class Item1
 				{
@@ -833,6 +846,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.33333331;
+					description="Alpha 4 - AR - Corporal - (Open Slot)";
 				};
 				class Item2
 				{
@@ -842,6 +856,7 @@ class Mission
 					vehicle="ACE_USMC_Soldier_Medic_D";
 					player="PLAY CDG";
 					skill=0.33333331;
+					description="Alpha 4 - Corpsman - Private - (Open Slot)";
 				};
 				class Item3
 				{
@@ -851,13 +866,387 @@ class Mission
 					vehicle="ACE_USMC_SoldierM_Marksman_D";
 					player="PLAY CDG";
 					skill=0.2;
+					description="Alpha 4 - Marksman - Private - (Open Slot)";
+				};
+			};
+		};
+		class Item22
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={14171.143,813.815,8333.9824};
+					id=195;
+					side="WEST";
+					vehicle="BAF_Soldier_SL_DDPM";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.46666664;
+					description="Badger Command - Badger Actual - Lieutenant";
+					synchronizations[]={161};
+				};
+				class Item1
+				{
+					position[]={14173.36,813.815,8334.0176};
+					id=196;
+					side="WEST";
+					vehicle="BAF_Soldier_Medic_DDPM";
+					player="PLAY CDG";
+					skill=0.33333331;
+					description="Badger Command - Badger Medic - Private";
+				};
+			};
+		};
+		class Item23
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14171.229,813.815,8331.3789};
+					id=197;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_DDPM";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.33333331;
+					description="Badger 1 - FTL - Sergeant";
+				};
+				class Item1
+				{
+					position[]={14173.616,813.815,8331.3545};
+					id=198;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_DDPM";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.2;
+					description="Badger 1 - LAT - Corporal";
+				};
+				class Item2
+				{
+					position[]={14175.761,813.815,8331.3545};
+					id=199;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 1 - LMG - Private";
+				};
+				class Item3
+				{
+					position[]={14177.995,813.815,8331.3281};
+					id=200;
+					side="WEST";
+					vehicle="BAF_Soldier_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 1 - CLS - Private";
+				};
+			};
+		};
+		class Item24
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14171.143,813.815,8329.0938};
+					id=201;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_DDPM";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.33333331;
+					description="Badger 2 - FTL - Sergeant";
+				};
+				class Item1
+				{
+					position[]={14173.529,813.815,8329.0693};
+					id=202;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_DDPM";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.2;
+					description="Badger 2 - LAT - Corporal";
+				};
+				class Item2
+				{
+					position[]={14175.674,813.815,8329.0693};
+					id=203;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 2 - LMG - Private";
+				};
+				class Item3
+				{
+					position[]={14177.908,813.815,8329.043};
+					id=204;
+					side="WEST";
+					vehicle="BAF_Soldier_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 2 - CLS - Private";
+				};
+			};
+		};
+		class Item25
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14171.228,813.815,8326.7852};
+					id=205;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_DDPM";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.33333331;
+					description="Badger 3 - FTL - Sergeant";
+				};
+				class Item1
+				{
+					position[]={14173.614,813.815,8326.7607};
+					id=206;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_DDPM";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.2;
+					description="Badger 3 - LAT - Corporal";
+				};
+				class Item2
+				{
+					position[]={14175.759,813.815,8326.7607};
+					id=207;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 3 - LMG - Private";
+				};
+				class Item3
+				{
+					position[]={14177.993,813.815,8326.7344};
+					id=208;
+					side="WEST";
+					vehicle="BAF_Soldier_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 3 - CLS - Private";
+				};
+			};
+		};
+		class Item26
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14171.343,813.815,8324.6445};
+					id=209;
+					side="WEST";
+					vehicle="BAF_Soldier_TL_DDPM";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.33333331;
+					description="Badger 4 - FTL - Sergeant";
+				};
+				class Item1
+				{
+					position[]={14173.729,813.815,8324.6201};
+					id=210;
+					side="WEST";
+					vehicle="BAF_Soldier_AT_DDPM";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.2;
+					description="Badger 4 - LAT - Corporal";
+				};
+				class Item2
+				{
+					position[]={14175.874,813.815,8324.6201};
+					id=211;
+					side="WEST";
+					vehicle="BAF_Soldier_AR_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 4 - LMG - Private";
+				};
+				class Item3
+				{
+					position[]={14178.108,813.815,8324.5938};
+					id=212;
+					side="WEST";
+					vehicle="BAF_Soldier_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Badger 4 - CLS - Private";
+				};
+			};
+		};
+		class Item27
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14222.537,813.815,8385.5117};
+					id=213;
+					side="WEST";
+					vehicle="USMC_Soldier_Pilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					description="Lance 1 - Pilot - Sergeant - (Open Slot)";
+				};
+				class Item1
+				{
+					position[]={14224.643,813.815,8385.4238};
+					id=214;
+					side="WEST";
+					vehicle="USMC_Soldier_Crew";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.33333331;
+					description="Lance 1 - Crewchief - Corporal - (Open Slot)";
+				};
+				class Item2
+				{
+					position[]={14226.37,813.815,8385.4609};
+					id=215;
+					side="WEST";
+					vehicle="ACE_USMC_Soldier_Crew_D";
+					player="PLAY CDG";
+					skill=0.33333331;
+					description="Lance 1 - Crewman - Private - (Open Slot)";
+				};
+				class Item3
+				{
+					position[]={14228.087,813.815,8385.3887};
+					id=216;
+					side="WEST";
+					vehicle="ACE_USMC_Soldier_Crew_D";
+					player="PLAY CDG";
+					skill=0.33333331;
+					description="Lance 1 - Crewman - Private - (Open Slot)";
+				};
+			};
+		};
+		class Item28
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14189.37,813.815,8385.3604};
+					id=217;
+					side="WEST";
+					vehicle="BAF_Pilot_DDPM";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.33333331;
+					description="Hatchet 1 - Pilot - Sergeant";
+				};
+				class Item1
+				{
+					position[]={14193.165,813.815,8385.3438};
+					id=219;
+					side="WEST";
+					vehicle="BAF_crewman_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Hatchet 1 - Crewman - Private";
+				};
+				class Item2
+				{
+					position[]={14191.269,813.815,8385.3848};
+					id=218;
+					side="WEST";
+					vehicle="BAF_crewman_DDPM";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.2;
+					description="Hatchet 1 - Crewchief - Corporal";
+				};
+				class Item3
+				{
+					position[]={14195.044,813.815,8385.3037};
+					id=220;
+					side="WEST";
+					vehicle="BAF_crewman_DDPM";
+					player="PLAY CDG";
+					skill=0.2;
+					description="Hatchet 1 - Crewman - Private";
+				};
+			};
+		};
+		class Item29
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14242.966,793.79572,8528.7549};
+					id=221;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item30
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14134.029,819.67242,8529.0762};
+					id=222;
+					side="LOGIC";
+					vehicle="ace_sys_repair_full";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=150;
+		items=151;
 		class Item0
 		{
 			position[]={14222.19,813.90887,8393.9893};
@@ -1218,7 +1607,8 @@ class Mission
 		};
 		class Item36
 		{
-			position[]={14182.11,813.815,8299.2285};
+			position[]={14160.933,813.815,8313.7549};
+			azimut=90;
 			id=48;
 			side="EMPTY";
 			vehicle="M2A3_EP1";
@@ -1473,8 +1863,8 @@ class Mission
 		};
 		class Item61
 		{
-			position[]={14160.39,813.815,8352.8135};
-			azimut=791.37402;
+			position[]={14185.302,813.815,8333.3516};
+			azimut=339.13199;
 			id=74;
 			side="EMPTY";
 			vehicle="M1129_MC_EP1";
@@ -1484,7 +1874,7 @@ class Mission
 		};
 		class Item62
 		{
-			position[]={14183.647,813.815,8338.1016};
+			position[]={14182.223,813.815,8341.2236};
 			azimut=339.13211;
 			id=75;
 			side="EMPTY";
@@ -2351,8 +2741,7 @@ class Mission
 		};
 		class Item147
 		{
-			position[]={14161.778,813.815,8314.8818};
-			azimut=90;
+			position[]={14181.812,813.815,8299.2832};
 			id=171;
 			side="EMPTY";
 			vehicle="BAF_FV510_D";
@@ -2382,10 +2771,21 @@ class Mission
 			text="mso_1019_1_2_1";
 			init="0 = [this, 86400, 9999999] execVM ""support\scripts\vehicle.sqf"";0 = this  execVM ""core\modules\rmm_weather\addAction.sqf"";";
 		};
+		class Item150
+		{
+			position[]={14161.014,813.815,8352.0479};
+			azimut=792.71802;
+			id=194;
+			side="EMPTY";
+			vehicle="BAF_Jackal2_L2A1_D";
+			skill=0.2;
+			text="mso_1016_1";
+			init="0 = [this, 86400, 9999999] execVM ""support\scripts\vehicle.sqf"";";
+		};
 	};
 	class Markers
 	{
-		items=120;
+		items=119;
 		class Item0
 		{
 			position[]={14228.3,813.815,8341.3477};
@@ -2438,21 +2838,13 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={14160.99,815.20477,8304.7539};
-			name="csw";
-			text="Crew Served Weapons";
-			type="hd_dot";
-			angle=114.5144;
-		};
-		class Item7
-		{
 			position[]={14158.35,813.96582,8363.4463};
 			name="service";
 			text="Vehicle Service Point";
 			type="hd_dot";
 			angle=11.10676;
 		};
-		class Item8
+		class Item7
 		{
 			position[]={14203.76,817.36609,8306.0469};
 			name="ammo";
@@ -2460,7 +2852,7 @@ class Mission
 			type="hd_dot";
 			angle=116.4832;
 		};
-		class Item9
+		class Item8
 		{
 			position[]={14170.16,813.815,8303.1611};
 			name="recruitment";
@@ -2468,7 +2860,7 @@ class Mission
 			type="hd_dot";
 			angle=23.44253;
 		};
-		class Item10
+		class Item9
 		{
 			position[]={14222.73,813.90741,8393.6523};
 			name="hospital";
@@ -2476,7 +2868,7 @@ class Mission
 			type="hd_dot";
 			angle=251.918;
 		};
-		class Item11
+		class Item10
 		{
 			position[]={14226.29,813.815,8337.3037};
 			name="logbook";
@@ -2484,7 +2876,7 @@ class Mission
 			type="hd_dot";
 			angle=23.44253;
 		};
-		class Item12
+		class Item11
 		{
 			position[]={14179.58,813.815,8327.5654};
 			name="logbook_1";
@@ -2492,7 +2884,7 @@ class Mission
 			type="hd_dot";
 			angle=79.520538;
 		};
-		class Item13
+		class Item12
 		{
 			position[]={14210.42,813.815,8375.2646};
 			name="heli";
@@ -2500,637 +2892,637 @@ class Mission
 			type="hd_dot";
 			angle=28.995199;
 		};
-		class Item14
+		class Item13
 		{
 			position[]={14201.95,813.815,8341.6123};
 			name="respawn_BIS_USMC";
 			type="Empty";
 		};
-		class Item15
+		class Item14
 		{
 			position[]={6563.0059,90.901176,22144.949};
 			name="CAS_Spawn";
 			type="Empty";
 		};
-		class Item16
+		class Item15
 		{
 			position[]={15189.51,856.61768,10034.2};
 			name="VB_0";
 			type="Empty";
 		};
-		class Item17
+		class Item16
 		{
 			position[]={15588.38,700.70453,10565.31};
 			name="VB_1";
 			type="Empty";
 		};
-		class Item18
+		class Item17
 		{
 			position[]={16804.961,488.4957,10644.03};
 			name="VB";
 			type="Empty";
 		};
-		class Item19
+		class Item18
 		{
 			position[]={16003.85,875.43793,12234.04};
 			name="VB_2";
 			type="Empty";
 		};
-		class Item20
+		class Item19
 		{
 			position[]={17254.18,727.6369,13098};
 			name="VB_3";
 			type="Empty";
 		};
-		class Item21
+		class Item20
 		{
 			position[]={16863.83,753.03992,8947.1846};
 			name="VB_4";
 			type="Empty";
 		};
-		class Item22
+		class Item21
 		{
 			position[]={17696.359,309.84579,8499.1387};
 			name="VB_5";
 			type="Empty";
 		};
-		class Item23
+		class Item22
 		{
 			position[]={15896.56,794.44061,8023.1079};
 			name="VB_6";
 			type="Empty";
 		};
-		class Item24
+		class Item23
 		{
 			position[]={16726.99,818.22223,4581.6279};
 			name="VB_7";
 			type="Empty";
 		};
-		class Item25
+		class Item24
 		{
 			position[]={13914.42,1209.495,5607.0039};
 			name="VB_8";
 			type="Empty";
 		};
-		class Item26
+		class Item25
 		{
 			position[]={14745.43,831.64673,7007.1499};
 			name="VB_9";
 			type="Empty";
 		};
-		class Item27
+		class Item26
 		{
 			position[]={11712.87,1360.455,7161.8159};
 			name="VB_10";
 			type="Empty";
 		};
-		class Item28
+		class Item27
 		{
 			position[]={18963.59,1166.548,5347.229};
 			name="VB_11";
 			type="Empty";
 		};
-		class Item29
+		class Item28
 		{
 			position[]={19306.24,1034.302,5953.7759};
 			name="VB_12";
 			type="Empty";
 		};
-		class Item30
+		class Item29
 		{
 			position[]={13361.57,1688.427,10555.06};
 			name="VB_13";
 			type="Empty";
 		};
-		class Item31
+		class Item30
 		{
 			position[]={12650.59,1468.181,8832.6885};
 			name="VB_14";
 			type="Empty";
 		};
-		class Item32
+		class Item31
 		{
 			position[]={13508.87,1065.816,12162.17};
 			name="VB_15";
 			type="Empty";
 		};
-		class Item33
+		class Item32
 		{
 			position[]={14516.72,411.2894,13089.92};
 			name="VB_16";
 			type="Empty";
 		};
-		class Item34
+		class Item33
 		{
 			position[]={13959.91,116.8698,14245.27};
 			name="VB_17";
 			type="Empty";
 		};
-		class Item35
+		class Item34
 		{
 			position[]={12932.98,643.02692,14857.84};
 			name="VB_18";
 			type="Empty";
 		};
-		class Item36
+		class Item35
 		{
 			position[]={11275.9,737.77319,14341.89};
 			name="VB_19";
 			type="Empty";
 		};
-		class Item37
+		class Item36
 		{
 			position[]={11483.19,704.27087,14203.22};
 			name="VB_20";
 			type="Empty";
 		};
-		class Item38
+		class Item37
 		{
 			position[]={11839.33,566.73859,12459.1};
 			name="VB_21";
 			type="Empty";
 		};
-		class Item39
+		class Item38
 		{
 			position[]={11425.59,1087.3719,11280.27};
 			name="VB_22";
 			type="Empty";
 		};
-		class Item40
+		class Item39
 		{
 			position[]={11270.5,1283.302,9981.624};
 			name="VB_23";
 			type="Empty";
 		};
-		class Item41
+		class Item40
 		{
 			position[]={10652.1,1438.39,6012.752};
 			name="VB_24";
 			type="Empty";
 		};
-		class Item42
+		class Item41
 		{
 			position[]={14409.08,790.20679,4161.2568};
 			name="VB_25";
 			type="Empty";
 		};
-		class Item43
+		class Item42
 		{
 			position[]={10139.13,1492.026,5568.0488};
 			name="VB_26";
 			type="Empty";
 		};
-		class Item44
+		class Item43
 		{
 			position[]={5994.439,2092.854,6667.373};
 			name="VB_27";
 			type="Empty";
 		};
-		class Item45
+		class Item44
 		{
 			position[]={8059.2202,1070.807,6050.9468};
 			name="VB_28";
 			type="Empty";
 		};
-		class Item46
+		class Item45
 		{
 			position[]={7316.75,1618.873,7865.6709};
 			name="VB_29";
 			type="Empty";
 		};
-		class Item47
+		class Item46
 		{
 			position[]={8098.3862,467.63721,11002.77};
 			name="VB_30";
 			type="Empty";
 		};
-		class Item48
+		class Item47
 		{
 			position[]={7747.3179,628.30798,9986.0547};
 			name="VB_31";
 			type="Empty";
 		};
-		class Item49
+		class Item48
 		{
 			position[]={7414.5342,467.58191,13436.03};
 			name="VB_32";
 			type="Empty";
 		};
-		class Item50
+		class Item49
 		{
 			position[]={6746.9429,1082.045,14615.44};
 			name="VB_33";
 			type="Empty";
 		};
-		class Item51
+		class Item50
 		{
 			position[]={7445.8242,407.64301,16448.51};
 			name="VB_34";
 			type="Empty";
 		};
-		class Item52
+		class Item51
 		{
 			position[]={4458.4971,2093.094,7390.8271};
 			name="VB_35";
 			type="Empty";
 		};
-		class Item53
+		class Item52
 		{
 			position[]={5510.4722,2047.861,8193.252};
 			name="VB_36";
 			type="Empty";
 		};
-		class Item54
+		class Item53
 		{
 			position[]={5807.3442,1319.4821,10144.93};
 			name="VB_37";
 			type="Empty";
 		};
-		class Item55
+		class Item54
 		{
 			position[]={4630.7959,1098.049,12203.36};
 			name="VB_38";
 			type="Empty";
 		};
-		class Item56
+		class Item55
 		{
 			position[]={3661.751,407.41901,12982.27};
 			name="VB_39";
 			type="Empty";
 		};
-		class Item57
+		class Item56
 		{
 			position[]={3486.938,1102.813,15809.42};
 			name="VB_40";
 			type="Empty";
 		};
-		class Item58
+		class Item57
 		{
 			position[]={3118.425,768.23248,17275};
 			name="VB_41";
 			type="Empty";
 		};
-		class Item59
+		class Item58
 		{
 			position[]={2761.2,1407.557,18875.85};
 			name="VB_42";
 			type="Empty";
 		};
-		class Item60
+		class Item59
 		{
 			position[]={1880.9561,1572.334,18502.221};
 			name="VB_43";
 			type="Empty";
 		};
-		class Item61
+		class Item60
 		{
 			position[]={2208.832,1594.701,15754.4};
 			name="VB_44";
 			type="Empty";
 		};
-		class Item62
+		class Item61
 		{
 			position[]={1928.9139,585.13678,14167.01};
 			name="VB_45";
 			type="Empty";
 		};
-		class Item63
+		class Item62
 		{
 			position[]={1445.4091,951.51428,10696.97};
 			name="VB_46";
 			type="Empty";
 		};
-		class Item64
+		class Item63
 		{
 			position[]={1851.183,1164.828,11749.95};
 			name="VB_47";
 			type="Empty";
 		};
-		class Item65
+		class Item64
 		{
 			position[]={2795.124,1033.5129,9051.085};
 			name="VB_48";
 			type="Empty";
 		};
-		class Item66
+		class Item65
 		{
 			position[]={4034.1951,2047.269,4831.2529};
 			name="VB_49";
 			type="Empty";
 		};
-		class Item67
+		class Item66
 		{
 			position[]={8533.6582,1158.899,2555.4709};
 			name="VB_50";
 			type="Empty";
 		};
-		class Item68
+		class Item67
 		{
 			position[]={6484.375,1042.4449,3435.2109};
 			name="VB_51";
 			type="Empty";
 		};
-		class Item69
+		class Item68
 		{
 			position[]={11846.05,436.1752,2238.7261};
 			name="VB_52";
 			type="Empty";
 		};
-		class Item70
+		class Item69
 		{
 			position[]={12319.28,651.15198,19059.051};
 			name="VB_53";
 			type="Empty";
 		};
-		class Item71
+		class Item70
 		{
 			position[]={11127.78,750.62927,18380.51};
 			name="VB_54";
 			type="Empty";
 		};
-		class Item72
+		class Item71
 		{
 			position[]={9120.6885,737.44849,19214.68};
 			name="VB_55";
 			type="Empty";
 		};
-		class Item73
+		class Item72
 		{
 			position[]={14610.74,729.79211,19493.52};
 			name="VB_56";
 			type="Empty";
 		};
-		class Item74
+		class Item73
 		{
 			position[]={17838.59,529.66089,15334.97};
 			name="VB_57";
 			type="Empty";
 		};
-		class Item75
+		class Item74
 		{
 			position[]={18258.4,384.1788,15772.54};
 			name="VB_58";
 			type="Empty";
 		};
-		class Item76
+		class Item75
 		{
 			position[]={16280.55,275.8526,15638};
 			name="VB_59";
 			type="Empty";
 		};
-		class Item77
+		class Item76
 		{
 			position[]={16636.68,569.46759,7045.9531};
 			name="FA_0";
 			type="Empty";
 		};
-		class Item78
+		class Item77
 		{
 			position[]={18431.051,214.0988,8837.2568};
 			name="FA_1";
 			type="Empty";
 		};
-		class Item79
+		class Item78
 		{
 			position[]={8919.9424,960.85681,6755.9922};
 			name="FA";
 			type="Empty";
 		};
-		class Item80
+		class Item79
 		{
 			position[]={5459.042,2102.2041,6115.3911};
 			name="FA_2";
 			type="Empty";
 		};
-		class Item81
+		class Item80
 		{
 			position[]={5434.8511,1560.8669,11303.26};
 			name="FA_3";
 			type="Empty";
 		};
-		class Item82
+		class Item81
 		{
 			position[]={4094.0601,336.61481,13834.13};
 			name="FA_4";
 			type="Empty";
 		};
-		class Item83
+		class Item82
 		{
 			position[]={2342.0891,1186.693,14909.38};
 			name="FA_5";
 			type="Empty";
 		};
-		class Item84
+		class Item83
 		{
 			position[]={1616.517,1633.486,18035};
 			name="FA_6";
 			type="Empty";
 		};
-		class Item85
+		class Item84
 		{
 			position[]={8811.0039,6.5708561,16748.85};
 			name="FA_7";
 			type="Empty";
 		};
-		class Item86
+		class Item85
 		{
 			position[]={11147.16,7.4215031,15995.56};
 			name="FA_8";
 			type="Empty";
 		};
-		class Item87
+		class Item86
 		{
 			position[]={11570.34,2.86677,16821.359};
 			name="FA_9";
 			type="Empty";
 		};
-		class Item88
+		class Item87
 		{
 			position[]={12694.61,2.86677,17236.41};
 			name="FA_10";
 			type="Empty";
 		};
-		class Item89
+		class Item88
 		{
 			position[]={14138.25,8.0181065,18038.859};
 			name="FA_11";
 			type="Empty";
 		};
-		class Item90
+		class Item89
 		{
 			position[]={17068.061,7.5454741,19289.4};
 			name="FA_12";
 			type="Empty";
 		};
-		class Item91
+		class Item90
 		{
 			position[]={19535.83,5.8748002,17108.42};
 			name="FA_13";
 			type="Empty";
 		};
-		class Item92
+		class Item91
 		{
 			position[]={19935.75,8.1202717,15851.76};
 			name="FA_14";
 			type="Empty";
 		};
-		class Item93
+		class Item92
 		{
 			position[]={14580.14,800.38452,12433.27};
 			name="FA_15";
 			type="Empty";
 		};
-		class Item94
+		class Item93
 		{
 			position[]={12493.93,811.79211,13416.79};
 			name="FA_16";
 			type="Empty";
 		};
-		class Item95
+		class Item94
 		{
 			position[]={12760.73,668.44879,14678.85};
 			name="FA_17";
 			type="Empty";
 		};
-		class Item96
+		class Item95
 		{
 			position[]={18669.391,151.61099,11196.95};
 			name="FA_18";
 			type="Empty";
 		};
-		class Item97
+		class Item96
 		{
 			position[]={14971.87,6.7540922,15907.61};
 			name="FA_19";
 			type="Empty";
 		};
-		class Item98
+		class Item97
 		{
 			position[]={15464.44,927.47791,11446.96};
 			name="FA_20";
 			type="Empty";
 		};
-		class Item99
+		class Item98
 		{
 			position[]={11270.5,1744.859,8239.7041};
 			name="FA_21";
 			type="Empty";
 		};
-		class Item100
+		class Item99
 		{
 			position[]={4764.562,716.79529,18228.109};
 			name="FA_22";
 			type="Empty";
 		};
-		class Item101
+		class Item100
 		{
 			position[]={4646.502,617.64862,17243.609};
 			name="FA_23";
 			type="Empty";
 		};
-		class Item102
+		class Item101
 		{
 			position[]={5254.3901,987.08252,20067.619};
 			name="FA_24";
 			type="Empty";
 		};
-		class Item103
+		class Item102
 		{
 			position[]={3313.739,2172.75,4272.583};
 			name="FA_25";
 			type="Empty";
 		};
-		class Item104
+		class Item103
 		{
 			position[]={8135.23,961.47552,9595.2012};
 			name="strat_0";
 			type="Empty";
 		};
-		class Item105
+		class Item104
 		{
 			position[]={6698.6528,1082.843,12678.23};
 			name="strat_1";
 			type="Empty";
 		};
-		class Item106
+		class Item105
 		{
 			position[]={5515.4678,632.28363,14053.18};
 			name="strat";
 			type="Empty";
 		};
-		class Item107
+		class Item106
 		{
 			position[]={5275.5952,336.66351,16795.061};
 			name="strat_2";
 			type="Empty";
 		};
-		class Item108
+		class Item107
 		{
 			position[]={6594.6821,346.78601,18242.711};
 			name="strat_3";
 			type="Empty";
 		};
-		class Item109
+		class Item108
 		{
 			position[]={10067.01,1008.453,19293.141};
 			name="strat_4";
 			type="Empty";
 		};
-		class Item110
+		class Item109
 		{
 			position[]={8336.4492,417.2489,15109.69};
 			name="strat_5";
 			type="Empty";
 		};
-		class Item111
+		class Item110
 		{
 			position[]={11041.67,307.54059,13297.62};
 			name="strat_6";
 			type="Empty";
 		};
-		class Item112
+		class Item111
 		{
 			position[]={11164.22,1614.226,6841.02};
 			name="strat_7";
 			type="Empty";
 		};
-		class Item113
+		class Item112
 		{
 			position[]={12413.82,945.47131,4930.1172};
 			name="strat_8";
 			type="Empty";
 		};
-		class Item114
+		class Item113
 		{
 			position[]={9402.5137,1499.839,4548.3428};
 			name="strat_9";
 			type="Empty";
 		};
-		class Item115
+		class Item114
 		{
 			position[]={16739.49,909.64838,6035.1982};
 			name="strat_10";
 			type="Empty";
 		};
-		class Item116
+		class Item115
 		{
 			position[]={17818.85,728.39569,7672.3008};
 			name="strat_11";
 			type="Empty";
 		};
-		class Item117
+		class Item116
 		{
 			position[]={15822.14,83.867233,14335.86};
 			name="strat_12";
 			type="Empty";
 		};
-		class Item118
+		class Item117
 		{
 			position[]={17968.01,723.25983,13943.17};
 			name="strat_13";
 			type="Empty";
 		};
-		class Item119
+		class Item118
 		{
 			position[]={18160.369,331.23889,14811.16};
 			name="strat_14";
