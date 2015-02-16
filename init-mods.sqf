@@ -103,7 +103,7 @@ if (isClass(configFile>>"CfgPatches">>"acre_main")) then {
                 } foreach _radiomarkers;
         };
         
-        //	[0] call acre_api_fnc_setLossModelScale;  // Description: Specify any value between 1.0 and 0. Setting it to 0 means the loss model is disabled, 1 is default.
+        	[0.2] call acre_api_fnc_setLossModelScale;  // Description: Specify any value between 1.0 and 0. Setting it to 0 means the loss model is disabled, 1 is default.
         
         runOnPlayers = {
                 [] spawn

@@ -26,7 +26,7 @@ class rmm_ep_spawn_dist {
         title = "    Enemy Spawn Distance"; 
         values[]= {500,1000,2000,4000,8000,20000}; 
         texts[]= {"500m","1000m","2000m","4000m","8000m","20km"}; 
-        default = 4000;
+        default = 2000;
 };
 class rmm_ep_safe_zone {
         title = "    Friendly Safe Zone"; 
