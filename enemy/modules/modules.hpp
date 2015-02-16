@@ -3,7 +3,7 @@
 #define CQB_POP
 #define RMM_ENEMYPOP
 #define ROY_PATROLOPS
-#define RMM_ZORA
+//#define RMM_ZORA
 #define TUP_IED
 #define CRB_CONVOYS
 

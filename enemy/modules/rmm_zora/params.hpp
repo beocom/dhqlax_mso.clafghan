@@ -2,7 +2,7 @@ class ZORAmaxgrps {
         title = "    Simultaneous ZORA groups"; 
         values[]= {0,3,5}; 
         texts[]= {"Off","3","5"};
-        default = 3;
+        default = 0;
 };
 class ZORAmindist {
         title = "        ZORA minimum spawndistance"; 
