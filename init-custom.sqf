@@ -21,8 +21,6 @@
 #define CH85 295.200
 #define CH86 298.725
 
-if (isServer) then {
-
 	retrans1 setPosASL [17228.8,720.748,136.384]; // airfield
 	["ACRE_PRC117F", retrans1, CH21, CH31, 20000] call acre_api_fnc_attachRxmtToObj;
 
@@ -44,15 +42,9 @@ if (isServer) then {
 	retrans5 setPosASL [8201.65,8672.35,1190.09]; // robstrepo
 	["ACRE_PRC117F", retrans5, CH35, CH25, 20000] call acre_api_fnc_attachRxmtToObj;
 
-};
 
 createMarker ["retrans1", getPos retrans1]; "retrans1" setMarkerType "Dot"; "retrans1" setMarkerText "1 - airfield";
 createMarker ["retrans2", getPos retrans2]; "retrans2" setMarkerType "Dot"; "retrans2" setMarkerText "2 - mike 2";
 createMarker ["retrans3", getPos retrans3]; "retrans3" setMarkerType "Dot"; "retrans3" setMarkerText "3 - baker (North)";
 createMarker ["retrans4", getPos retrans4]; "retrans4" setMarkerType "Dot"; "retrans4" setMarkerText "4 - mike 1";
 createMarker ["retrans5", getPos retrans5]; "retrans5" setMarkerType "Dot"; "retrans5" setMarkerText "5 - robstrepo";
-
-
-if (!isDedicated) then {
-  onMapSingleClick "player setPos _pos";
-};
