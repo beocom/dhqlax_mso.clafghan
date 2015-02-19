@@ -8,7 +8,7 @@ class mpdb_save_delay_server {
         title = "        Persistent Auto-Save (Server)"; 
         values[]= {120,300,600,1800,3600,7200,14400,0}; 
         texts[]= {"2 mins","5 mins","10 mins","30 mins","1 hour","2 hours","4 hours","Off"}; 
-        default = 600;
+        default = 300;
 };
 class mpdb_save_delay_player {
         title = "        Persistent Auto-Save (Player)"; 
