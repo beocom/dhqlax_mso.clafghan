@@ -13,7 +13,7 @@ class MISSIONTYPE_PO { // MISSION TYPE
 class MISSIONTYPE_AIR { // MISSION TYPE
 	title= "        Mission Type Air Ops";
 	values[]={0,1};
-	default=1;
+	default=0;
 	texts[]={"Off","Experimental"};
 };
 class MISSIONCOUNT { // MISSION COUNT
