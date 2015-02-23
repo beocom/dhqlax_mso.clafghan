@@ -14,7 +14,7 @@ class tup_ied_threat {
         title = "        Ambient IED Threat"; 
         values[]= {0,50,100,200,350}; 
         texts[]= {"None","Low","Med","High","Extreme"}; 
-        default = 100;
+        default = 50;
 };
 class tup_suicide_threat {
         title = "        Ambient Suicide Bomber Threat"; 
