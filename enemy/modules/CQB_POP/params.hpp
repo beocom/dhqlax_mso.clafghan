@@ -2,7 +2,7 @@ class CQB_spawn {
 	title = "    CQB Populator (Building %)"; 
 	values[]= {0,5,10,20,30,40,50}; 
 	texts[]= {"Off","5%","10%","20%","30%","40%","50%"}; 
-	default = 40;
+	default = 50;
 };
 
 class CQBaicap {
