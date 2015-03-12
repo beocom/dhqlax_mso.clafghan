@@ -14,7 +14,7 @@ class DEP_ACTIVE_LOCS {
         title = "    Enemy Active Locations"; 
         values[]= {0,20,40,60,80,100}; 
         texts[]= {"Disabled","20","40","60","80","100"}; 
-        default = 80;
+        default = 100;
 };
 class DEP_DENSITY {
         title = "    Enemy Density";
