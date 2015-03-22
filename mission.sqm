@@ -422,7 +422,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={14206.639,813.815,8366.1963};
+					position[]={15680.432,6.1945367,17187.854};
 					id=149;
 					side="WEST";
 					vehicle="ACE_USMC_Soldier_SL_D";
@@ -7627,7 +7627,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules2.jpg""];";
 		};
 		class Item490
 		{
@@ -7756,7 +7756,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules2.jpg""];";
 		};
 		class Item503
 		{
@@ -7786,7 +7786,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules2.jpg""];";
 		};
 		class Item506
 		{
@@ -7919,7 +7919,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules1.jpg""];";
 		};
 		class Item520
 		{
@@ -7929,7 +7929,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules1.jpg""];";
 		};
 		class Item521
 		{
@@ -7939,7 +7939,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules1.jpg""];";
 		};
 		class Item522
 		{
@@ -7949,7 +7949,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules2.jpg""];";
 		};
 		class Item523
 		{
@@ -7979,7 +7979,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules1.jpg""];";
 		};
 		class Item526
 		{
@@ -7989,7 +7989,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules2.jpg""];";
 		};
 		class Item527
 		{
@@ -8019,7 +8019,7 @@ class Mission
 			side="EMPTY";
 			vehicle="WarfareBunkerSign";
 			skill=0.2;
-			init="this setObjectTexture [0, ""rules.jpg""];";
+			init="this setObjectTexture [0, ""rules1.jpg""];";
 		};
 	};
 	class Markers
